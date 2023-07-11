@@ -106,16 +106,19 @@
         let phone = document.getElementById('user_phone').value
         if(name.length<5){
             document.getElementById('error').innerHTML = "Error in name"
-            
+            return;
+          
         }
         if(email.length<5){
             document.getElementById('error').innerHTML = "Error in email"
+            return;
             
         }
 
          if(phone.length<5){
             document.getElementById('error').innerHTML = "Error in phone"
-        
+            return;
+          
         }
 
           let data = {
